@@ -106,18 +106,13 @@ public class AccessApi {
         
         com.squareup.okhttp.Call call = createAccessTokenCall(username, password, progressListener, progressRequestListener);
         return call;
-
-        
-        
-        
-        
     }
 
     /**
      * Creates a token for accessing the REST API via username/password
      * The token returned is formatted as a JSON Web Token (JWT). The token is base64 encoded and comprised of three parts. The header, the body, and the signature. The expiration of the token is a contained within the body. The token can be used in the Authorization header in the format &#39;Authorization: Bearer &lt;token&gt;&#39;.
-     * @param username  (optional)
-     * @param password  (optional)
+     * @param username  (optional) 登录用户名
+     * @param password  (optional) 登录用户的密码
      * @return String
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */

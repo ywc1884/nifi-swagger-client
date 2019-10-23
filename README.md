@@ -13,45 +13,6 @@ The client web Service accept authentication with OAuth2.
 
 The license is Apache 2.0, see LICENSE-2.0.txt.
 
-### Binary Releases
-
-You can find published releases on Maven Central.
-
-#### Maven users
-
-Add this dependency to your project's POM:
-
-```xml
-<dependency>
-    <groupId>com.github.hermannpencole</groupId>
-    <artifactId>nifi-swagger-client</artifactId>
-    <version>1.2.0.1</version>
-    <scope>compile</scope>
-</dependency>
-```
-
-#### sbt users:
-
-Add this dependency to your project's build file:
-
-```
-libraryDependencies += "com.github.hermannpencole" % "nifi-swagger-client" % "1.2.0.1"
-```
-
-#### Gradle users
-
-Add this dependency to your project's build file:
-
-```groovy
-compile "com.github.hermannpencole:nifi-swagger-client:1.2.0.1"
-```
-
-#### Others
-
-Link for direct download if you don't use a dependency manager:
-
-- [http://central.maven.org/maven2/com/github/hermannpencole/nifi-swagger-client/](http://central.maven.org/maven2/com/github/hermannpencole/nifi-swagger-client/)
-
 ### Which version 
 
 The version of product correspond to the nifi api version.
@@ -75,10 +36,10 @@ Example Call with OAuth2 access token
 
 ```java
 
-import com.github.hermannpencole.nifi.swagger.*;
-import com.github.hermannpencole.nifi.swagger.auth.*;
-import com.github.hermannpencole.nifi.swagger.client.model.*;
-import com.github.hermannpencole.nifi.swagger.client.AccessApi;
+import com.ywc1884.nifi.swagger.*;
+import com.ywc1884.nifi.swagger.auth.*;
+import com.ywc1884.nifi.swagger.client.model.*;
+import com.ywc1884.nifi.swagger.client.AccessApi;
 
 import java.io.File;
 import java.util.*;
@@ -542,5 +503,5 @@ Refer to the [official documentation](https://maven.apache.org/plugins/maven-dep
 
 ## Author
 
-Hermann Pencolé
+The origin author is Hermann Pencolé, I forked his project and updated some code inside due to accommodate to apache nifi version upgrade.
 
